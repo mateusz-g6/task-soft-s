@@ -1,0 +1,20 @@
+package:
+  name: task-soft-s
+  version: "1.0.0"
+
+source:
+  path: ./source
+
+build:
+  script: build.bat
+
+requirements:
+  build:
+    - cmake
+  run:
+    - python
+
+about:
+  home: https://github.com/mateusz-g6/task-soft-s
+  summary: "Conda task."
+  license: MIT
