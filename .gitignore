@@ -54,5 +54,23 @@ envs/
 *.app
 *.pdb
 
+# Ignore Visual Studio and CMake build files
+conda-package/recipe/*.vcxproj
+conda-package/recipe/*.filters
+conda-package/recipe/*.tlog
+conda-package/recipe/*.log
+conda-package/recipe/*.tmp
+conda-package/recipe/*.sln
+conda-package/recipe/*.exe
+conda-package/recipe/*.pdb
+
+# Ignore CMake and build files
+conda-package/src/CMakeLists.txt
+conda-package/src/*.cmake
+conda-package/src/*.o
+conda-package/src/*.obj
+conda-package/src/*.exe
+
+
 # Ignore backup files created by editors
 *~
