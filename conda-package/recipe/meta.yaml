@@ -3,7 +3,7 @@ package:
   version: "1.0.0"
 
 source:
-  path: ./source
+  path: ../src
 
 build:
   script: build.bat
@@ -11,10 +11,11 @@ build:
 requirements:
   build:
     - cmake
+    - openssl
   run:
-    - python
+    - openssl
 
 about:
   home: https://github.com/mateusz-g6/task-soft-s
-  summary: "Conda task."
+  summary: "Simple hashing example with OpenSSL."
   license: MIT

@@ -1,76 +1,28 @@
-# Ignore Conda build artifacts
-conda-package/conda-bld/
-conda-package/*/conda-bld/
-
-# Ignore build files in recipe folder (generated files)
-conda-package/recipe/*.log
-conda-package/recipe/*.tmp
-conda-package/recipe/*.tlog
-conda-package/recipe/*.recipe
-conda-package/recipe/*.lastbuildstate
-
-# Ignore temporary and log files
-*.log
-*.tmp
-*.swp
-.DS_Store
+# Ignore .tlog files
+*.tlog
 
 # Ignore CMake build files
 CMakeCache.txt
 CMakeFiles/
 Makefile
 cmake_install.cmake
-*.cmake
 
-# Ignore compiled binaries or object files
-*.o
+# Ignore VS generated files
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.user
+*.userosscache
+*.aps
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
 *.obj
-*.so
-*.a
-*.dll
-*.dylib
-*.exe
-*.out
-*.app
-*.pdb
+*.json
 
-# Ignore Python cache files
-__pycache__/
-*.pyc
-
-# IDE and OS specific files
-.vscode/
-.idea/
 
 # Ignore environment files (optional, if used)
 envs/
-
-# Ignore virtual environment folders if any
-*.env/
-
-# Ignore the result of the build (executables, etc.)
-*.exe
-*.out
-*.app
-*.pdb
-
-# Ignore Visual Studio and CMake build files
-conda-package/recipe/*.vcxproj
-conda-package/recipe/*.filters
-conda-package/recipe/*.tlog
-conda-package/recipe/*.log
-conda-package/recipe/*.tmp
-conda-package/recipe/*.sln
-conda-package/recipe/*.exe
-conda-package/recipe/*.pdb
-
-# Ignore CMake and build files
-conda-package/src/CMakeLists.txt
-conda-package/src/*.cmake
-conda-package/src/*.o
-conda-package/src/*.obj
-conda-package/src/*.exe
-
-
-# Ignore backup files created by editors
-*~

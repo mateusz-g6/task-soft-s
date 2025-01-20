@@ -1,0 +1,279 @@
+Adding in variants from internal_defaults
+Attempting to finalize metadata for task-soft-s
+Reloading output folder: ...working... done
+Getting pinned dependencies: ...working... done
+BUILD START: ['task-soft-s-1.0.0-0.conda']
+Reloading output folder: ...working... done
+Solving environment (_h_env): ...working... done
+Reloading output folder: ...working... done
+Solving environment (_test_env): ...working... done
+
+## Package Plan ##
+
+  environment location: C:\Users\Olimat\anaconda3\conda-bld\task-soft-s_1737324205150\_h_env
+
+
+The following NEW packages will be INSTALLED:
+
+    bzip2:           1.0.8-h2bbff1b_6      
+    ca-certificates: 2024.12.31-haa95532_0 
+    cmake:           3.31.2-h53b1909_0     
+    libuv:           1.48.0-h827c3e9_0     
+    lz4-c:           1.9.4-h2bbff1b_1      
+    openssl:         3.0.15-h827c3e9_0     
+    vc:              14.40-haa95532_2      
+    vs2015_runtime:  14.42.34433-h9531ae6_2
+    xz:              5.4.6-h8cc25b3_1      
+    zlib:            1.2.13-h8cc25b3_1     
+    zstd:            1.5.6-h8880b57_0      
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Copying C:\Users\Olimat\Desktop\Mat\task-soft-s\conda-package\src to C:\Users\Olimat\anaconda3\conda-bld\task-soft-s_1737324205150\work\
+
+Rendered as:
+```yaml
+package:
+  name: task-soft-s
+  version: 1.0.0
+source:
+  path: C:\Users\Olimat\Desktop\Mat\task-soft-s\conda-package\src
+build:
+  script: build.bat
+requirements:
+  build:
+    - ca-certificates 2024.12.31 haa95532_0
+    - vs2015_runtime 14.42.34433 h9531ae6_2
+    - vc 14.40 haa95532_2
+    - bzip2 1.0.8 h2bbff1b_6
+    - libuv 1.48.0 h827c3e9_0
+    - lz4-c 1.9.4 h2bbff1b_1
+    - openssl 3.0.15 h827c3e9_0
+    - xz 5.4.6 h8cc25b3_1
+    - zlib 1.2.13 h8cc25b3_1
+    - zstd 1.5.6 h8880b57_0
+    - cmake 3.31.2 h53b1909_0
+  run:
+    - openssl >=3.0.15,<4.0a0
+about:
+  home: https://github.com/mateusz-g6/task-soft-s
+  license: MIT
+  summary: Simple hashing example with OpenSSL.
+extra:
+  copy_test_source_files: true
+  final: true
+```
+
+source tree in: C:\Users\Olimat\anaconda3\conda-bld\task-soft-s_1737324205150\work
+Rewriting env in output: {'BUILD_PREFIX': 'C:\\Users\\Olimat\\anaconda3\\conda-bld\\task-soft-s_1737324205150\\_h_env',
+ 'PREFIX': 'C:\\Users\\Olimat\\anaconda3\\conda-bld\\task-soft-s_1737324205150\\_h_env',
+ 'SRC_DIR': 'C:\\Users\\Olimat\\anaconda3\\conda-bld\\task-soft-s_1737324205150\\work'}
+
+(base) %SRC_DIR%>IF "" == "" (call %SRC_DIR%\build_env_setup.bat ) 
+
+(base) %SRC_DIR%>set "CONDA_BUILD=1" 
+
+(base) %SRC_DIR%>set "PYTHONNOUSERSITE=1" 
+
+(base) %SRC_DIR%>set "CONDA_DEFAULT_ENV=%BUILD_PREFIX%" 
+
+(base) %SRC_DIR%>set "ARCH=64" 
+
+(base) %SRC_DIR%>set "PREFIX=%BUILD_PREFIX%" 
+
+(base) %SRC_DIR%>set "BUILD_PREFIX=%BUILD_PREFIX%" 
+
+(base) %SRC_DIR%>set "SYS_PREFIX=C:\Users\Olimat\anaconda3" 
+
+(base) %SRC_DIR%>set "SYS_PYTHON=C:\Users\Olimat\anaconda3\python.exe" 
+
+(base) %SRC_DIR%>set "SUBDIR=win-64" 
+
+(base) %SRC_DIR%>set "build_platform=win-64" 
+
+(base) %SRC_DIR%>set "SRC_DIR=%SRC_DIR%" 
+
+(base) %SRC_DIR%>set "ROOT=C:\Users\Olimat\anaconda3" 
+
+(base) %SRC_DIR%>set "CONDA_PY=312" 
+
+(base) %SRC_DIR%>set "PY3K=1" 
+
+(base) %SRC_DIR%>set "PY_VER=3.12" 
+
+(base) %SRC_DIR%>set "STDLIB_DIR=%BUILD_PREFIX%\Lib" 
+
+(base) %SRC_DIR%>set "SP_DIR=%BUILD_PREFIX%\Lib\site-packages" 
+
+(base) %SRC_DIR%>set "NPY_VER=1.26" 
+
+(base) %SRC_DIR%>set "CONDA_NPY=1.26" 
+
+(base) %SRC_DIR%>set "NPY_DISTUTILS_APPEND_FLAGS=1" 
+
+(base) %SRC_DIR%>set "PERL_VER=5.26" 
+
+(base) %SRC_DIR%>set "CONDA_PERL=5.26.2" 
+
+(base) %SRC_DIR%>set "LUA_VER=5" 
+
+(base) %SRC_DIR%>set "CONDA_LUA=5" 
+
+(base) %SRC_DIR%>set "R_VER=3.4" 
+
+(base) %SRC_DIR%>set "CONDA_R=3.4" 
+
+(base) %SRC_DIR%>set "PKG_NAME=task-soft-s" 
+
+(base) %SRC_DIR%>set "PKG_VERSION=1.0.0" 
+
+(base) %SRC_DIR%>set "PKG_BUILDNUM=0" 
+
+(base) %SRC_DIR%>set "PKG_BUILD_STRING=placeholder" 
+
+(base) %SRC_DIR%>set "PKG_HASH=1234567" 
+
+(base) %SRC_DIR%>set "RECIPE_DIR=C:\Users\Olimat\Desktop\Mat\task-soft-s\conda-package\recipe" 
+
+(base) %SRC_DIR%>set "CPU_COUNT=16" 
+
+(base) %SRC_DIR%>set "SHLIB_EXT=.dll" 
+
+(base) %SRC_DIR%>set "PATH=%BUILD_PREFIX%;%BUILD_PREFIX%\Library\mingw-w64\bin;%BUILD_PREFIX%\Library\usr\bin;%BUILD_PREFIX%\Library\bin;%BUILD_PREFIX%\Scripts;%BUILD_PREFIX%\bin;%BUILD_PREFIX%;%BUILD_PREFIX%\Library\mingw-w64\bin;%BUILD_PREFIX%\Library\usr\bin;%BUILD_PREFIX%\Library\bin;%BUILD_PREFIX%\Scripts;%BUILD_PREFIX%\bin;C:\Users\Olimat\anaconda3;C:\Users\Olimat\anaconda3\Library\mingw-w64\bin;C:\Users\Olimat\anaconda3\Library\usr\bin;C:\Users\Olimat\anaconda3\Library\bin;C:\Users\Olimat\anaconda3\Scripts;C:\Users\Olimat\anaconda3\bin;C:\Users\Olimat\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\Olimat\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\Olimat\AppData\Local\Programs\Python\Python313;C:\Users\Olimat\AppData\Local\Microsoft\WindowsApps;C:\Users\Olimat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3\bin;.;." 
+
+(base) %SRC_DIR%>set "SCRIPTS=%BUILD_PREFIX%\Scripts" 
+
+(base) %SRC_DIR%>set "LIBRARY_PREFIX=%BUILD_PREFIX%\Library" 
+
+(base) %SRC_DIR%>set "LIBRARY_BIN=%BUILD_PREFIX%\Library\bin" 
+
+(base) %SRC_DIR%>set "LIBRARY_INC=%BUILD_PREFIX%\Library\include" 
+
+(base) %SRC_DIR%>set "LIBRARY_LIB=%BUILD_PREFIX%\Library\lib" 
+
+(base) %SRC_DIR%>set "CYGWIN_PREFIX=/cygdrive/c/Users/Olimat/anaconda3/conda-bld/task-soft-s_1737324205150/_h_env" 
+
+(base) %SRC_DIR%>set "ALLUSERSPROFILE=C:\ProgramData" 
+
+(base) %SRC_DIR%>set "APPDATA=C:\Users\Olimat\AppData\Roaming" 
+
+(base) %SRC_DIR%>set "CommonProgramFiles=C:\Program Files\Common Files" 
+
+(base) %SRC_DIR%>set "CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files" 
+
+(base) %SRC_DIR%>set "CommonProgramW6432=C:\Program Files\Common Files" 
+
+(base) %SRC_DIR%>set "COMPUTERNAME=DESKTOP-AMP6317" 
+
+(base) %SRC_DIR%>set "ComSpec=C:\WINDOWS\system32\cmd.exe" 
+
+(base) %SRC_DIR%>set "HOMEDRIVE=C:" 
+
+(base) %SRC_DIR%>set "HOMEPATH=\Users\Olimat" 
+
+(base) %SRC_DIR%>set "LOCALAPPDATA=C:\Users\Olimat\AppData\Local" 
+
+(base) %SRC_DIR%>set "LOGONSERVER=\\DESKTOP-AMP6317" 
+
+(base) %SRC_DIR%>set "NUMBER_OF_PROCESSORS=16" 
+
+(base) %SRC_DIR%>set "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" 
+
+(base) %SRC_DIR%>set "ProgramData=C:\ProgramData" 
+
+(base) %SRC_DIR%>set "ProgramFiles=C:\Program Files" 
+
+(base) %SRC_DIR%>set "ProgramFiles(x86)=C:\Program Files (x86)" 
+
+(base) %SRC_DIR%>set "ProgramW6432=C:\Program Files" 
+
+(base) %SRC_DIR%>set "PROMPT=(base) $P$G" 
+
+(base) %SRC_DIR%>set "PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules" 
+
+(base) %SRC_DIR%>set "PUBLIC=C:\Users\Public" 
+
+(base) %SRC_DIR%>set "SystemDrive=C:" 
+
+(base) %SRC_DIR%>set "SystemRoot=C:\WINDOWS" 
+
+(base) %SRC_DIR%>set "TEMP=C:\Users\Olimat\AppData\Local\Temp" 
+
+(base) %SRC_DIR%>set "TMP=C:\Users\Olimat\AppData\Local\Temp" 
+
+(base) %SRC_DIR%>set "USERDOMAIN=DESKTOP-AMP6317" 
+
+(base) %SRC_DIR%>set "USERNAME=Olimat" 
+
+(base) %SRC_DIR%>set "USERPROFILE=C:\Users\Olimat" 
+
+(base) %SRC_DIR%>set "windir=C:\WINDOWS" 
+
+(base) %SRC_DIR%>set "PROCESSOR_ARCHITECTURE=AMD64" 
+
+(base) %SRC_DIR%>set "PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel" 
+
+(base) %SRC_DIR%>set "BUILD=amd64-pc-windows-19.0.0" 
+
+(base) %SRC_DIR%>set "extend_keys={'extend_keys', 'pin_run_as_build', 'ignore_build_only_deps', 'ignore_version'}" 
+
+(base) %SRC_DIR%>set "pin_run_as_build=OrderedDict({'python': {'min_pin': 'x.x', 'max_pin': 'x.x'}, 'r-base': {'min_pin': 'x.x', 'max_pin': 'x.x'}})" 
+
+(base) %SRC_DIR%>set "ignore_build_only_deps={'numpy', 'python'}" 
+
+(base) %SRC_DIR%>set "cpu_optimization_target=nocona" 
+
+(base) %SRC_DIR%>set "cxx_compiler=vs2017" 
+
+(base) %SRC_DIR%>set "c_compiler=vs2017" 
+
+(base) %SRC_DIR%>set "r_base=3.4" 
+
+(base) %SRC_DIR%>set "fortran_compiler=gfortran" 
+
+(base) %SRC_DIR%>set "vc=14" 
+
+(base) %SRC_DIR%>set "target_platform=win-64" 
+
+(base) %SRC_DIR%>set "cran_mirror=https://cran.r-project.org" 
+
+(base) %SRC_DIR%>set "CONDA_BUILD_STATE=BUILD" 
+
+(base) %SRC_DIR%>set "PIP_NO_BUILD_ISOLATION=False" 
+
+(base) %SRC_DIR%>set "PIP_NO_DEPENDENCIES=True" 
+
+(base) %SRC_DIR%>set "PIP_IGNORE_INSTALLED=True" 
+
+(base) %SRC_DIR%>set "PIP_CACHE_DIR=C:\Users\Olimat\anaconda3\conda-bld\task-soft-s_1737324205150\pip_cache" 
+
+(base) %SRC_DIR%>set "PIP_NO_INDEX=True" 
+
+(base) %SRC_DIR%>set DISTUTILS_USE_SDK=1 
+
+(base) %SRC_DIR%>set MSSdk=1 
+
+(base) %SRC_DIR%>set PY_VCRUNTIME_REDIST=%BUILD_PREFIX%\Library\bin\vcruntime140.dll 
+
+(base) %SRC_DIR%>set "VS_VERSION=14.0" 
+
+(base) %SRC_DIR%>set "VS_MAJOR=14" 
+
+(base) %SRC_DIR%>set "VS_YEAR=2015" 
+
+(base) %SRC_DIR%>set "CMAKE_GENERATOR=Visual Studio 14 2015 Win64" 
+
+(base) %SRC_DIR%>set "MSYS2_ARG_CONV_EXCL=/AI;/AL;/OUT;/out" 
+
+(base) %SRC_DIR%>set "MSYS2_ENV_CONV_EXCL=CL" 
+
+(base) %SRC_DIR%>call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 
+
+(base) %SRC_DIR%>set "INCLUDE=%BUILD_PREFIX%\Library\include;" 
+
+(base) %SRC_DIR%>set "LIB=%BUILD_PREFIX%\Library\lib;" 
+
+(base) %SRC_DIR%>call "C:\Users\Olimat\anaconda3\Scripts\..\condabin\conda_hook.bat" 
+
+(base) %SRC_DIR%>call "C:\Users\Olimat\anaconda3\Scripts\..\condabin\conda.bat" activate --stack "%BUILD_PREFIX%" 
