@@ -1,32 +1,58 @@
-# Prerequisites
-*.d
+# Ignore Conda build artifacts
+conda-package/conda-bld/
+conda-package/*/conda-bld/
 
-# Compiled Object files
-*.slo
-*.lo
+# Ignore build files in recipe folder (generated files)
+conda-package/recipe/*.log
+conda-package/recipe/*.tmp
+conda-package/recipe/*.tlog
+conda-package/recipe/*.recipe
+conda-package/recipe/*.lastbuildstate
+
+# Ignore temporary and log files
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignore CMake build files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.cmake
+
+# Ignore compiled binaries or object files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
+*.dll
+*.dylib
 *.exe
 *.out
 *.app
+*.pdb
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# IDE and OS specific files
+.vscode/
+.idea/
+
+# Ignore environment files (optional, if used)
+envs/
+
+# Ignore virtual environment folders if any
+*.env/
+
+# Ignore the result of the build (executables, etc.)
+*.exe
+*.out
+*.app
+*.pdb
+
+# Ignore backup files created by editors
+*~
